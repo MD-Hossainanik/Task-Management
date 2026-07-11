@@ -8,17 +8,9 @@ import NoTaskFound from "./NoTaskFound";
 
 
 const TaskBoard = () => {
-  const defaultTask = {
-    id: crypto.randomUUID(),
-    title: "Learn React",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, quam.",
-    tags: ["web", "React", "Js"],
-    priority: "Low",
-    isFavorite: true,
-  };
+  
 
-  const [tasks, setTasks] = useState([defaultTask]);
+  const [tasks, setTasks] = useState([]);
   const [showAddModal, setShowAddModal] = useState(false);
   const [taskToUpdate, setTaskToUpdate] = useState(null);
 
